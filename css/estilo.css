@@ -1,0 +1,325 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ----- Estilos Nav ----- */
+
+nav{
+    background-color: rgb(30, 30, 30);
+    display: block;
+    padding: 10px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav #top{
+    height: 40px;
+    padding: 0 100px;
+}
+
+nav .menu{
+    display: block;
+    position: absolute;
+    right: 100px;
+    top: 25px;
+}
+
+.nav-item{
+    display:inline-block;
+}
+
+.nav-item a {
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.nav-item a:hover{
+    background-color: rgb(90, 90, 90);
+}
+
+.nav-item .submenu{
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    background-color: rgb(30, 30, 30);
+}
+
+.nav-item .submenu li{
+    padding: 10px;
+}
+
+.nav-item:hover > ul{
+    display: block;
+}
+
+/* ----- Estilos Header ----- */
+
+header{
+    width: 100%;
+    height: 300px;
+    background-image:url(../img/control_header.jpg);
+    background-position: 0;
+    background-size: cover;
+}
+
+header #texto-header{
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
+
+#texto-header h1{
+    padding: 80px;
+}
+
+/* ----- Estilos Main Index ----- */
+
+main{
+    width: 100%;
+    display: block;
+}
+
+#main-video{
+    position: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+main .textos-principal{
+    width: 55%;
+    position: absolute;
+    left: 500px;
+    top: 400px;
+    z-index: 1;
+    padding: 30px;
+    overflow: hidden;
+    border: 4px solid white;
+    border-radius: 50px;
+    text-align: center;
+    
+}
+
+main .textos-principal h1{
+    font-size: 100px;
+    color: white;
+}
+
+main .textos-principal h2{
+    font-weight: 100;
+    font-size: 50px;
+    color: white;
+}
+
+main .flecha-principal{
+    width: fit-content;
+    position: absolute;
+    left: 1050px;
+    top: 1000px;
+    z-index: 0;
+    /* margin: auto; */
+}
+
+main .flecha-principal img{
+    width: 40px;
+}
+
+/* ----- Estilos Seccion Secundaria ----- */
+
+section.seccion-secundaria{
+    display: block;
+    width: 100%;
+}
+
+.seccion-secundaria .contenedor-flecha-volver-arriba{
+    width: fit-content;
+    margin: auto;
+}
+
+.seccion-secundaria .contenedor-flecha-volver-arriba img{
+    width: 40px;
+}
+
+/* ----- ESTILOS POR PAGINA ----- */
+/* ----- Index ----- */
+
+.seccion-secundaria .contenedor-tarjetas{
+    display: block;
+}
+
+.seccion-secundaria .contenedor-tarjetas .tarjeta{
+    display: inline-block;
+    width: 600px;
+    height: 750px;
+    margin: 50px;
+    border: 4px solid black;
+    border-radius: 30px;
+}
+
+.seccion-secundaria .contenedor-tarjetas .tarjeta h3{
+    font-size: 40px;
+    padding: 5px 20px;
+}
+
+.seccion-secundaria .contenedor-tarjetas .tarjeta p{
+    font-size: 30px;
+    padding: 0 20px;
+}
+
+.seccion-secundaria .contenedor-tarjetas .tarjeta img{
+    height: 600px;
+    width: 100%;
+    object-fit:cover;
+}
+
+/* ----- Galeria ----- */
+
+.galeria-fotos{
+    padding: 50px 100px;
+}
+
+.galeria-fotos #galeria-foto{
+    font-size: 40px;
+}
+
+.galeria-contenedor-imagenes{
+    display: block;
+    padding: 10px 0px;
+    width: 1710px;
+    height: 650px;
+}
+
+.galeria-contenedor-imagenes img{
+    display: inline-block;
+    height: 315px;
+    width: 560px;
+    border: 4px solid black;
+    object-position: center;
+    object-fit: cover;
+}
+
+.galeria-videos{
+    padding: 50px 100px;
+}
+
+.galeria-videos #galeria-video{
+    font-size: 40px;
+}
+
+.galeria-contenedor-videos{
+    display: block;
+    padding: 10px 0px;
+    width: 1710px;
+}
+
+.galeria-contenedor-videos iframe{
+    display: inline-block;
+    border: 4px solid black;
+}
+
+/* ----- Contacto ----- */
+
+.contenedor-contacto{
+    display: inline-block;
+    width: fit-content;
+    margin: 0 200px;
+    padding: 50px;
+    vertical-align: top;
+}
+
+.contenedor-contacto h2{
+    font-size: 40px;
+    padding: 0 0 20px 0;
+}
+
+.contenedor-contacto form{
+    padding: 10px;
+    border: 4px solid black;
+    border-radius: 20px;
+}
+
+.contenedor-contacto label{
+    padding: 5px 10px 5px 0;
+    font-size: 20px;   
+}
+
+.contenedor-informacion-interno{
+    padding: 10px;
+    border: 4px solid black;
+    border-radius: 20px;
+}
+
+.contenedor-informacion-interno p{
+    font-size: 20px;
+}
+
+/* ----- Estilos Footer ----- */
+
+footer{
+    height: 100px;
+    width: 100%;
+    padding: 15px 0;
+    display: block;
+    background-color: rgb(30, 30, 30);
+}
+
+.bloque-footer{
+    display: inline-block;
+    margin: 0px 250px;
+}
+
+.bloque-footer p{
+    font-size: 18px;
+    color: white;
+}
+
+.bloque-footer img{
+    height: 20px;
+}
+
+.bloque-footer .info-footer{
+    display: block;
+    width: fit-content;
+}
+
+.info-footer img{
+    padding: 0 10px;
+    display: inline-block;
+}
+
+.info-footer p{
+    display: inline-block;
+}
+
+.social-footer{
+    text-align: center;
+}
+
+.social-footer p{
+    padding: 10px 0;
+}
+
+.social-footer .iconos-social{
+    display: inline-block;
+}
+
+.social-footer .iconos-social a{
+    padding: 0 10px;
+}
+
+.logo-footer img{
+    height: 60px;
+}

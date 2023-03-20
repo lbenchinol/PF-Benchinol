@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <!-- Inicio del nav bar -->
+    <nav>
+        <a href="index.html"><img id="top" src="./img/logo-blanco.png" alt="logo"></a>
+        <ul class="menu">
+            <li class="nav-item"><a href="index.html">Inicio</a></li>
+            <li class="nav-item"><a href="">Servicios</a></li>
+            <li class="nav-item"><a href="">Nuestros trabajos</a></li>
+            <li class="nav-item"><a href="./html/galeria.html">Galería</a>
+                <ul class="submenu">
+                    <li><a href="./html/galeria.html#galeria-foto">Fotos</a></li>
+                    <li><a href="./html/galeria.html#galeria-video">Videos</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="./html/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- Fin nav bar -->
+    <!-- Inicio seccion principal -->
+    <main>
+        <div class="video-principal">
+            <video id="main-video" loop="true" autoplay="true" src="./media/Video-index.mp4"></video>
+        </div>
+        <div class="textos-principal">
+            <h1>CINEMA PRODUCTION</h1>
+            <h2>Transformamos tu idea en realidad</h2>
+        </div>
+        <div class="flecha-principal">
+            <img src="./img/flecha_abajo.png" alt="imagen flecha hacia abajo">
+        </div>
+    </main>
+    <!-- Fin seccion principal -->
+    <!-- Inicio seccion secundaria -->
+    <section class="seccion-secundaria">
+        <article class="contenedor-tarjetas">
+            <div class="tarjeta">
+                <h3>SERVICIOS</h3>
+                <img src="./img/control1.jpg" alt="imagen servicios">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, odit!</p>
+            </div>
+            <div class="tarjeta">
+                <h3>NUESTROS TRABAJOS</h3>
+                <img src="./img/cam_estadio.jpg" alt="imagen nuestros trabajos">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, placeat.</p>
+            </div>
+            <a href="./html/galeria.html">
+                <div class="tarjeta">
+                <h3>GALERÍA</h3>
+                <img src="./img/luz_estudio.jpg" alt="imagen galería">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, cupiditate?</p>
+                </div>
+            </a>
+            
+        </article>
+        <div class="contenedor-flecha-volver-arriba">
+            <a href="#main-video"><img src="./img/flecha_arriba.png" alt="imagen flecha hacia arriba"></a>
+        </div>
+    </section>
+    <!-- Fin seccion secundaria -->
+    <!-- Inicio footer -->
+    <footer>
+        <div class="bloque-footer">
+            <!-- Inicio box info en footer -->
+                <div class="info-footer">
+                    <img src="./img/geo.png" alt="icon-direccion">
+                    <p>Avenida Dirección 123 1ºA</p>
+                </div>
+                <div class="info-footer">
+                    <img src="./img/telefono.png" alt="icon-telefono">
+                    <p>11-12345678</p>
+                </div>
+                <div class="info-footer">
+                    <img src="./img/email.png" alt="icon-mail">
+                    <p>productora@mail.com</p>
+                </div>
+            <!-- Fin box info en footer -->
+        </div>
+        <div class="bloque-footer">
+            <!-- Inicio box social en footer -->
+            <div class="social-footer">
+                <p>Redes sociales</p>
+                <div class="iconos-social">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt="icon-instagram"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="./img/twitter.png" alt="icon-twitter"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" alt="icon-facebook"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="./img/youtube.png" alt="icon-youtube"></a>
+                </div>
+            </div>
+            <!-- Fin box social en footer -->
+        </div>
+        <div class="bloque-footer">
+            <!-- Inicio box logo en footer -->
+            <div class="logo-footer">
+                <a href="index.html"><img src="./img/logo-blanco.png" alt="logo"></a>
+            </div>
+        <!-- Fin box logo en footer -->
+        </div>
+    </footer>
+    <!-- Fin footer -->
+</body>
+</html>
