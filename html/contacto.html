@@ -12,7 +12,7 @@
 
     <!-- LINK MIS ESTILOS -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Galería</title>
+    <title>Contacto</title>
 </head>
 <body>
     <!-- Inicio del nav bar -->
@@ -31,37 +31,56 @@
             <li class="nav-item"><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
+    <!-- Fin nav bar -->
     <!-- Inicio header -->
     <header>
         <div id="texto-header">
-            <h1>GALERÍA</h1>
+            <h1>CONTACTO</h1>
         </div>
     </header>
     <!-- Fin header -->
     <!-- Inicio seccion secundaria -->
     <section class="seccion-secundaria">
-        <article class="galeria-fotos">
-            <h2 id="galeria-foto">Fotos</h2>
-            <div class="galeria-contenedor-imagenes row row-cols-1 row-cols-sm-2 row-cols-md-3">
-                <img class="col" src="../img/cam_estadio.jpg" alt="camara de television">
-                <img class="col" src="../img/cam_exterior.jpg" alt="camara de television">
-                <img class="col" src="../img/control1.jpg" alt="control de television">
-                <img class="col" src="../img/control_header.jpg" alt="control de television">
-                <img class="col" src="../img/estudio.jpg" alt="estudio de television">
-                <img class="col" src="../img/luz_estudio.jpg" alt="foco de luz">
+        <div class="contenedor-contacto">
+            <h2>Escribinos</h2>
+            <form action="#" class="formulario">
+                <div class="mb-3">
+                    <label for="nombre-apellido" class="form-label">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="nombre-apellido" placeholder="Nombre y Apellido">
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+                </div>
+                <div class="mb-3">
+                    <label for="mail" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="mail" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="mb-3">
+                    <label for="asunto" class="form-label">Asunto</label>
+                    <input type="text" class="form-control" id="asunto" placeholder="Asunto">
+                </div>
+                <div class="mb-3">
+                    <label for="consulta" class="form-label">Consulta</label>
+                    <textarea class="form-control" id="consulta" rows="3" placeholder="Escriba aquí su consulta"></textarea>
+                </div>
+                <div class="mb-3 text-center">
+                    <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="contenedor-contacto">
+            <h2>Información</h2>
+            <div class="contenedor-informacion-interno">
+                <label>E-mail: info@cinema.com</label>
+                <label>Teléfono: 11-12345678</label>
+                <label>Dirección: Conde 155, CABA</label>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.901514296568!2d-58.446114283974104!3d-34.58135846382393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5ec6edec4df%3A0x2d0e8a1d9a277f50!2sConde%20155%2C%20C1426AYA%20CABA!5e0!3m2!1ses-419!2sar!4v1676690299652!5m2!1ses-419!2sar" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-        </article>
-
-        <article class="galeria-videos">
-            <h2 id="galeria-video">Videos</h2>
-            <div class="galeria-contenedor-videos row row-cols-1 row-cols-md-3">
-                <iframe class="col" width="560" height="315" src="https://www.youtube.com/embed/tFI4phm8Flg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-                <iframe class="col" width="560" height="315" src="https://www.youtube.com/embed/GJqThRpBinA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-                <iframe class="col" width="560" height="315" src="https://www.youtube.com/embed/-2wy5IAW0TM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-        </article>
+        </div>
 
         <div class="contenedor-flecha-volver-arriba">
             <a href="#texto-header"><img src="../img/flecha_arriba.png" alt="imagen flecha hacia arriba"></a>
@@ -74,7 +93,7 @@
             <!-- Inicio box info en footer -->
                 <div class="info-footer">
                     <img src="../img/geo.png" alt="icon-direccion">
-                    <p>Avenida Dirección 123 1ºA</p>
+                    <p>Conde 155, CABA</p>
                 </div>
                 <div class="info-footer">
                     <img src="../img/telefono.png" alt="icon-telefono">
@@ -82,7 +101,7 @@
                 </div>
                 <div class="info-footer">
                     <img src="../img/email.png" alt="icon-mail">
-                    <p>productora@mail.com</p>
+                    <p>info@cinema.com</p>
                 </div>
             <!-- Fin box info en footer -->
         </div>
@@ -108,8 +127,5 @@
         </div>
     </footer>
     <!-- Fin footer -->
-
-    <!-- LINK JAVASCRIPT BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
