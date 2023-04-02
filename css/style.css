@@ -76,6 +76,7 @@ header{
     background-size: cover;
 }
 header #texto-header{
+    transform: translateY(-30px);
     text-align: center;
     color: white;
 }
@@ -256,6 +257,18 @@ main{
     width: 100%;
     border-radius: 10px;
 }
+
+/* ----- Nuestros trabajos ----- */
+.contenedor-trabajos{
+    background-color: rgb(245, 245, 245);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.info-trabajos h2{
+    padding-top: 5px;
+    font-weight: 400;
+}
+
 /* ----- Estilos Footer ----- */
 
 footer{
@@ -308,6 +321,12 @@ footer{
 }
 
 @media screen and (min-width: 768px) {
+    /* ----- HEADER ----- */
+    header #texto-header{
+        transform: translateY(0);
+        text-align: center;
+        color: white;
+    }
     /* ----- INDEX ----- */
     /* ----- SECCION PRINCIPAL ----- */
     .flecha-principal{
