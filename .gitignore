@@ -81,5 +81,7 @@ $RECYCLE.BIN/
 
 # Carpeta Bootstrap
 /bootstrap-5.2.3-dist
+/estilos backup
+package.json
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,windows,macos

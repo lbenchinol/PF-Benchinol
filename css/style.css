@@ -1,68 +1,289 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
 }
 
-a{
-    text-decoration: none !important;
-    color: black;
+a {
+  text-decoration: none !important;
+  color: black;
 }
 
 /* ----- Estilos Nav ----- */
-.active{
-    border-bottom: 1px solid;
+nav #top {
+  height: 50px;
 }
-nav #top{
-    height: 50px;
+nav .active {
+  border-bottom: 1px solid;
 }
 
 /* ----- Estilos Header ----- */
-
-header{
-    width: 100%;
-    height: 150px;
-    background-image:url(../img/control_header.jpg);
-    background-position: 0;
-    background-size: cover;
+header {
+  width: 100%;
+  height: 150px;
+  background-image: url(../img/control_header.jpg);
+  background-position: 0;
+  background-size: cover;
 }
-header #texto-header{
-    transform: translateY(-30px);
-    text-align: center;
-    color: white;
+header #texto-header {
+  transform: translateY(-30px);
+  text-align: center;
+  color: white;
 }
-#texto-header h1{
-    font-size: 3rem;
-    font-weight: 600;
-    padding: 50px;
+header #texto-header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 50px;
 }
 
 /* ----- Estilos Main Index ----- */
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .video-principal {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+main .video-principal #main-video {
+  width: 100%;
+}
+main .video-principal .flecha-principal {
+  display: none;
+}
+main .textos-principal {
+  width: 70%;
+  position: absolute;
+  top: 0;
+  margin-top: 20%;
+  padding: 2%;
+  overflow: hidden;
+  border: 4px solid white;
+  border-radius: 40px;
+}
+main .textos-principal h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+main .textos-principal h2 {
+  font-weight: 100;
+  font-size: 1.5rem;
+  color: white;
+}
 
-main{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* ----- Estilos Seccion Secundaria ----- */
+.seccion-secundaria {
+  display: inline-block;
+  width: 100%;
+  padding: 0 40px;
+  /* ----- ESTILOS POR PAGINA ----- */
+  /* ----- Index ----- */
+  /* ----- Galeria ----- */
+  /* ----- Contacto ----- */
+  /* ----- Servicios ----- */
+  /* ----- Nuestros trabajos ----- */
+  /* ----- FLECHA VOLVER ARRIBA ----- */
 }
-.video-principal{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+.seccion-secundaria .contenedor-tarjetas {
+  justify-content: center;
+  overflow: hidden;
 }
-#main-video{
-    width: 100%;
+.seccion-secundaria .contenedor-tarjetas a {
+  color: black;
 }
-.flecha-principal{
-    display: none;
+.seccion-secundaria .contenedor-tarjetas .tarjeta {
+  padding: 0;
+  display: inline-block;
+  width: 30rem;
+  height: 42rem;
+  margin: 1rem 3rem;
+  border: 4px solid black;
+  border-radius: 30px;
 }
-.textos-principal{
+.seccion-secundaria .contenedor-tarjetas .tarjeta h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 5px 20px;
+}
+.seccion-secundaria .contenedor-tarjetas .tarjeta p {
+  font-size: 1.6rem;
+  padding: 0 20px;
+}
+.seccion-secundaria .contenedor-tarjetas .tarjeta img {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+}
+.seccion-secundaria .galeria-fotos {
+  padding: 2rem;
+}
+.seccion-secundaria .galeria-fotos h2 {
+  font-size: 2rem;
+}
+.seccion-secundaria .galeria-fotos .galeria-contenedor-imagenes {
+  border: 4px solid black;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.seccion-secundaria .galeria-fotos .galeria-contenedor-imagenes img {
+  padding: 0;
+}
+.seccion-secundaria .galeria-videos {
+  padding: 30px;
+}
+.seccion-secundaria .galeria-videos h2 {
+  font-size: 2rem;
+}
+.seccion-secundaria .galeria-videos .galeria-contenedor-videos {
+  display: flex;
+}
+.seccion-secundaria .galeria-videos .galeria-contenedor-videos iframe {
+  padding: 0;
+  border: 4px solid black;
+  border-radius: 20px;
+}
+.seccion-secundaria .contenedor-contacto {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px 0;
+}
+.seccion-secundaria .contenedor-contacto h2 {
+  font-size: 2.2rem;
+}
+.seccion-secundaria .contenedor-contacto .formulario {
+  padding: 10px;
+  border: 4px solid black;
+  border-radius: 20px;
+}
+.seccion-secundaria .contenedor-contacto label {
+  font-size: 1.2rem;
+}
+.seccion-secundaria .contenedor-contacto .contenedor-informacion-interno {
+  padding: 10px;
+  border: 4px solid black;
+  border-radius: 20px;
+}
+.seccion-secundaria .contenedor-contacto .contenedor-informacion-interno label {
+  font-size: 1.2rem;
+  display: block;
+}
+.seccion-secundaria .contenedor-contacto .contenedor-informacion-interno .mapa {
+  display: flex;
+  justify-content: center;
+}
+.seccion-secundaria .contenedor-servicios {
+  background-color: rgb(245, 245, 245);
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.seccion-secundaria .contenedor-servicios .info-servicios h2 {
+  padding-top: 5px;
+  font-weight: 400;
+}
+.seccion-secundaria .contenedor-servicios .imagen-servicios {
+  overflow: hidden;
+}
+.seccion-secundaria .contenedor-servicios .imagen-servicios img {
+  width: 100%;
+  border-radius: 10px;
+}
+.seccion-secundaria .contenedor-trabajos {
+  background-color: rgb(245, 245, 245);
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.seccion-secundaria .contenedor-trabajos .info-trabajos h2 {
+  padding-top: 5px;
+  font-weight: 400;
+}
+.seccion-secundaria .contenedor-flecha-volver-arriba {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.seccion-secundaria .contenedor-flecha-volver-arriba img {
+  width: 40px;
+}
+
+/* ----- Estilos Footer ----- */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  height: 135px;
+  width: 100%;
+  padding: 15px 0;
+  background-color: rgb(30, 30, 30);
+}
+footer .bloque-footer {
+  display: inline-block;
+}
+footer .bloque-footer p {
+  font-size: 0.9rem;
+  color: white;
+}
+footer .bloque-footer img {
+  height: 1.2rem;
+}
+footer .bloque-footer .info-footer {
+  display: block;
+}
+footer .bloque-footer .info-footer img {
+  padding: 0 0.3rem;
+  display: inline-block;
+}
+footer .bloque-footer .info-footer p {
+  display: inline-block;
+}
+footer .bloque-footer .social-footer {
+  transform: translateX(-40px);
+  text-align: center;
+}
+footer .bloque-footer .social-footer p {
+  padding: 0.5rem 0;
+}
+footer .bloque-footer .social-footer .iconos-social {
+  display: inline-block;
+}
+footer .bloque-footer .social-footer .iconos-social a {
+  padding: 0 0.7rem;
+}
+footer .bloque-footer .logo-footer {
+  padding: 1rem;
+}
+footer .bloque-footer .logo-footer img {
+  height: 3.5rem;
+}
+
+/* ----- MEDIA QUERIES ----- */
+@media screen and (min-width: 768px) {
+  header #texto-header {
+    transform: translateY(0);
+    text-align: center;
+    color: white;
+  }
+  /* ----- INDEX ----- */
+  /* ----- SECCION PRINCIPAL ----- */
+  main .video-principal .flecha-principal {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+  }
+  main .video-principal .flecha-principal img {
+    width: 40px;
+  }
+  main .textos-principal {
     width: 70%;
     position: absolute;
     top: 0;
@@ -71,279 +292,50 @@ main{
     overflow: hidden;
     border: 4px solid white;
     border-radius: 40px;
-}
-.textos-principal h1{
-    font-size: 2rem;
+  }
+  main .textos-principal h1 {
+    font-size: 3rem;
     font-weight: 600;
     color: white;
-}
-.textos-principal h2{
+  }
+  main .textos-principal h2 {
     font-weight: 100;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: white;
+  }
 }
-
-/* ----- Estilos Seccion Secundaria ----- */
-
-.seccion-secundaria{
-    display: inline-block;
-    width: 100%;
-    padding: 0 40px;
-}
-.seccion-secundaria .contenedor-flecha-volver-arriba{
-    width: fit-content;
-    margin: auto;
-    margin-bottom: 20px;
-}
-.seccion-secundaria .contenedor-flecha-volver-arriba img{
-    width: 40px;
-}
-
-/* ----- ESTILOS POR PAGINA ----- */
-/* ----- Index ----- */
-
-.contenedor-tarjetas{
-    justify-content: center;
-    overflow: hidden;
-}
-.contenedor-tarjetas a{
-    color: black;
-}
-.contenedor-tarjetas .tarjeta{
-    padding: 0;
-    display: inline-block;
-    width: 30rem;
-    height: 42rem;
-    margin: 1rem 3rem;
-    border: 4px solid black;
-    border-radius: 30px;
-}
-.contenedor-tarjetas .tarjeta h3{
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 5px 20px;
-}
-.contenedor-tarjetas .tarjeta p{
-    font-size: 1.6rem;
-    padding: 0 20px;
-}
-.contenedor-tarjetas .tarjeta img{
-    height: 30rem;
-    width: 100%;
-    object-fit:cover;
-}
-
-/* ----- Galeria ----- */
-.galeria-fotos{
-    padding: 2rem;
-}
-.galeria-fotos h2{
-    font-size: 2rem;
-}
-.galeria-contenedor-imagenes{
-    border: 4px solid black;
-    border-radius: 30px;
-    overflow: hidden;
-}
-.galeria-contenedor-imagenes img{
-    padding: 0;
-}
-.galeria-videos{
-    padding: 30px;
-}
-.galeria-videos h2{
-    font-size: 2rem;
-}
-.galeria-contenedor-videos{
-    display: flex;
-}
-.galeria-contenedor-videos iframe{
-    padding: 0;
-    border: 4px solid black;
-    border-radius: 20px;
-}
-
-/* ----- Contacto ----- */
-.contenedor-contacto{
-    max-width: 600px;
-    margin: auto;
-    padding: 30px 0;
-}
-.contenedor-contacto h2{
-    font-size: 2.2rem;
-}
-.contenedor-contacto .formulario{
-    padding: 10px;
-    border: 4px solid black;
-    border-radius: 20px;
-}
-.contenedor-contacto label{
-    font-size: 1.2rem;   
-}
-.contenedor-informacion-interno{
-    padding: 10px;
-    border: 4px solid black;
-    border-radius: 20px;
-}
-.contenedor-informacion-interno label{
-    font-size: 1.2rem;
-    display: block;
-}
-.contenedor-informacion-interno .mapa{
-    display: flex;
-    justify-content: center;
-}
-
-/* ----- Servicios ----- */
-.contenedor-servicios{
-    background-color: rgb(245, 245, 245);
-    border: 2px solid black;
-    border-radius: 10px;
-}
-.info-servicios h2{
-    padding-top: 5px;
-    font-weight: 400;
-}
-.imagen-servicios{
-    overflow: hidden;
-}
-.imagen-servicios img{
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* ----- Nuestros trabajos ----- */
-.contenedor-trabajos{
-    background-color: rgb(245, 245, 245);
-    border: 2px solid black;
-    border-radius: 10px;
-}
-.info-trabajos h2{
-    padding-top: 5px;
-    font-weight: 400;
-}
-
-/* ----- Estilos Footer ----- */
-
-footer{
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    height: 135px;
-    width: 100%;
-    padding: 15px 0;
-    background-color: rgb(30, 30, 30);
-}
-.bloque-footer{
-    display: inline-block;
-}
-.bloque-footer p{
-    font-size: 0.9rem;
-    color: white;
-}
-.bloque-footer img{
-    height: 1.2rem;
-}
-.bloque-footer .info-footer{
-    display: block;
-}
-.info-footer img{
-    padding: 0 0.3rem;
-    display: inline-block;
-}
-.info-footer p{
-    display: inline-block;
-}
-.social-footer{
-    transform: translateX(-40px);
-    text-align: center;
-}
-.social-footer p{
-    padding: 0.5rem 0;
-}
-.social-footer .iconos-social{
-    display: inline-block;
-}
-.social-footer .iconos-social a{
-    padding: 0 0.7rem;
-}
-.logo-footer{
-    padding: 1rem;
-}
-.logo-footer img{
-    height: 3.5rem;
-}
-
-@media screen and (min-width: 768px) {
-    /* ----- HEADER ----- */
-    header #texto-header{
-        transform: translateY(0);
-        text-align: center;
-        color: white;
-    }
-    /* ----- INDEX ----- */
-    /* ----- SECCION PRINCIPAL ----- */
-    .flecha-principal{
-        display: block;
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 20px;
-    }
-    .flecha-principal img{
-        width: 40px;
-    }
-    .textos-principal{
-        width: 70%;
-        position: absolute;
-        top: 0;
-        margin-top: 20%;
-        padding: 2%;
-        overflow: hidden;
-        border: 4px solid white;
-        border-radius: 40px;
-    }
-    .textos-principal h1{
-        font-size: 3rem;
-        font-weight: 600;
-        color: white;
-    }
-    .textos-principal h2{
-        font-weight: 100;
-        font-size: 1.7rem;
-        color: white;
-    }
-}
-
 @media screen and (min-width: 1200px) {
-    /* ----- INDEX ----- */
-    /* ----- SECCION PRINCIPAL ----- */
-    .flecha-principal{
-        display: block;
-        position: absolute;
-        bottom: 0;
-        transform: translateY(-15vw);
-    }
-    .flecha-principal img{
-        width: 40px;
-    }
-    .textos-principal{
-        width: 70%;
-        position: absolute;
-        top: 0;
-        margin-top: 20%;
-        padding: 2%;
-        overflow: hidden;
-        border: 4px solid white;
-        border-radius: 40px;
-    }
-    .textos-principal h1{
-        font-size: 4rem;
-        font-weight: 600;
-        color: white;
-    }
-    .textos-principal h2{
-        font-weight: 100;
-        font-size: 2rem;
-        color: white;
-    }
+  /* ----- INDEX ----- */
+  /* ----- SECCION PRINCIPAL ----- */
+  main .video-principal .flecha-principal {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-15vw);
+  }
+  main .video-principal .flecha-principal img {
+    width: 40px;
+  }
+  main .textos-principal {
+    width: 70%;
+    position: absolute;
+    top: 0;
+    margin-top: 20%;
+    padding: 2%;
+    overflow: hidden;
+    border: 4px solid white;
+    border-radius: 40px;
+  }
+  main .textos-principal h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+  }
+  main .textos-principal h2 {
+    font-weight: 100;
+    font-size: 2rem;
+    color: white;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
