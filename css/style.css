@@ -281,10 +281,6 @@ footer .bloque-footer img {
 footer .bloque-footer .info-footer {
   display: block;
 }
-footer .bloque-footer .info-footer img {
-  padding: 0 0.3rem;
-  display: inline-block;
-}
 footer .bloque-footer .info-footer p {
   display: inline-block;
 }
