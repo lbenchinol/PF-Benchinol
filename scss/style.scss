@@ -197,6 +197,7 @@ main {
 
         h2 {
             font-size: 2rem;
+            font-weight: 600;
         }
 
         .galeria-contenedor-imagenes {
@@ -236,6 +237,7 @@ main {
 
         h2 {
             font-size: 2.2rem;
+            font-weight: 600;
         }
 
         .formulario {
@@ -274,7 +276,7 @@ main {
         .info-servicios {
             h2 {
                 padding-top: 5px;
-                font-weight: 400;
+                font-weight: 600;
             }
         }
 
@@ -297,7 +299,7 @@ main {
         .info-trabajos {
             h2 {
                 padding-top: 5px;
-                font-weight: 400;
+                font-weight: 600;
             }
         }
     }
@@ -317,16 +319,16 @@ main {
 /* ----- Estilos Footer ----- */
 
 footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    height: 135px;
+    display: block;
+    height: 260px;
     width: 100%;
-    padding: 15px 0;
+    padding: 1px 0;
     background-color: rgb(30, 30, 30);
 
     .bloque-footer {
-        display: inline-block;
+        display: block;
+        text-align: center;
+        margin: 15px 0;
 
         p {
             font-size: 0.9rem;
@@ -342,15 +344,15 @@ footer {
 
             p {
                 display: inline-block;
+                margin: 5px 0;
             }
         }
 
         .social-footer {
-            transform: translateX(-40px);
             text-align: center;
 
             p {
-                padding: 0.5rem 0;
+                margin: 0;
             }
 
             .iconos-social {
@@ -363,7 +365,6 @@ footer {
         }
 
         .logo-footer {
-            padding: 1rem;
 
             img {
                 height: 3.5rem;
@@ -421,6 +422,64 @@ footer {
             }
         }
     }
+
+    /* ----- Estilos Footer ----- */
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        height: 135px;
+        width: 100%;
+        padding: 15px 0;
+        background-color: rgb(30, 30, 30);
+
+        .bloque-footer {
+            display: inline-block;
+
+            p {
+                font-size: 0.9rem;
+                color: white;
+            }
+
+            img {
+                height: 1.2rem;
+            }
+
+            .info-footer {
+                display: block;
+
+                p {
+                    display: inline-block;
+                }
+            }
+
+            .social-footer {
+                transform: translateX(-10px);
+                text-align: center;
+
+                p {
+                    padding: 0.5rem 0;
+                }
+
+                .iconos-social {
+                    display: inline-block;
+
+                    a {
+                        padding: 0 0.7rem;
+                    }
+                }
+            }
+
+            .logo-footer {
+                padding: 1rem;
+
+                img {
+                    height: 3.5rem;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -461,6 +520,64 @@ footer {
                 font-weight: 100;
                 font-size: 2rem;
                 color: white;
+            }
+        }
+    }
+
+    /* ----- Estilos Footer ----- */
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        height: 135px;
+        width: 100%;
+        padding: 15px 0;
+        background-color: rgb(30, 30, 30);
+
+        .bloque-footer {
+            display: inline-block;
+
+            p {
+                font-size: 0.9rem;
+                color: white;
+            }
+
+            img {
+                height: 1.2rem;
+            }
+
+            .info-footer {
+                display: block;
+
+                p {
+                    display: inline-block;
+                }
+            }
+
+            .social-footer {
+                transform: translateX(-10px);
+                text-align: center;
+
+                p {
+                    padding: 0.5rem 0;
+                }
+
+                .iconos-social {
+                    display: inline-block;
+
+                    a {
+                        padding: 0 0.7rem;
+                    }
+                }
+            }
+
+            .logo-footer {
+                padding: 1rem;
+
+                img {
+                    height: 3.5rem;
+                }
             }
         }
     }
