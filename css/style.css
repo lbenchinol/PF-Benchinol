@@ -342,6 +342,14 @@ footer .bloque-footer .logo-footer img {
     font-size: 1.7rem;
     color: white;
   }
+  /* ----- SERVICIOS ----- */
+  .seccion-secundaria .contenedor-servicios {
+    padding: 0 10px;
+  }
+  /* ----- NUESTROS TRABAJOS ----- */
+  .seccion-secundaria .contenedor-trabajos {
+    padding: 0 10px;
+  }
   /* ----- Estilos Footer ----- */
   footer {
     display: flex;
